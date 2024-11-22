@@ -1,0 +1,36 @@
+<root main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <Sequence>
+            <SetBlackboard output_key="Goal_a" value="-0.579;-1.341;0.0;1.0" />
+            <SetBlackboard output_key="Goal_b" value="5.214;-1.533;0.0;1.0" />
+            <SetBlackboard output_key="Goal_c" value="-1.588;1.253;0.0;1.0" />
+            <Repeat num_cycles="-1">
+                <ForceSuccess>
+                    <Fallback>
+                        <Sequence>
+                            <CheckQRCode qr_code="qr2" timeout="30" />
+                            <PushToStack value="Goal_a" />
+                            <SubTree ID="MoveRobot" />
+                        </Sequence>
+                        <Sequence>
+                            <CheckQRCode qr_code="qr3" timeout="30" />
+                            <PushToStack value="Goal_b" />
+                            <SubTree ID="MoveRobot" />
+                        </Sequence>
+                        <Sequence>
+                            <CheckQRCode qr_code="qr1" timeout="30" />
+                            <PushToStack value="Goal_c" />
+                            <SubTree ID="MoveRobot" />
+                        </Sequence>
+                    </Fallback>
+                </ForceSuccess>
+            </Repeat>
+        </Sequence>
+    </BehaviorTree>
+
+    <BehaviorTree ID="MoveRobot">
+        <Sequence name="SetGoal">
+            <Nav2Client goal="{target}" />
+        </Sequence>
+    </BehaviorTree>
+</root>

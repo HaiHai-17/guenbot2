@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem1">
+  <link name="base_footprint"/>
+  <joint
+    name="base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.012936 -0.00034705 0.035467"
+        rpy="0 0 0" />
+      <mass
+        value="0.99584" />
+      <inertia
+        ixx="0.0012508"
+        ixy="6.6075E-08"
+        ixz="-1.2079E-07"
+        iyy="0.0032476"
+        iyz="1.0886E-08"
+        izz="0.0044661" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.010347 -1.975E-06 -0.0018549"
+        rpy="0 0 0" />
+      <mass
+        value="0.0025101" />
+      <inertia
+        ixx="1.4089E-07"
+        ixy="-4.632E-12"
+        ixz="-4.3376E-09"
+        iyy="9.3351E-08"
+        iyz="3.3291E-11"
+        izz="8.8217E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.14369 0.0012145 0.123"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="imu_link">
+    <inertial>
+      <origin
+        xyz="-0.00033889 0.00014469 0.00085827"
+        rpy="0 0 0" />
+      <mass
+        value="0.00052039" />
+      <inertia
+        ixx="1.5707E-08"
+        ixy="8.4574E-12"
+        ixz="-1.4215E-14"
+        iyy="9.1862E-09"
+        iyz="-3.6463E-14"
+        izz="2.4681E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/imu_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/imu_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0020303 -0.0065406 0.008"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.00668521000575893 0.000281468343386403 -0.0160534771970324"
+        rpy="0 0 0" />
+      <mass
+        value="0.0757267113293577" />
+      <inertia
+        ixx="1.6041530277696E-05"
+        ixy="-1.64290020317423E-07"
+        ixz="-2.90703272221695E-08"
+        iyy="2.27422442657109E-05"
+        iyz="5.8947954217786E-09"
+        izz="3.56916101484555E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="-0.055636 -0.0086718 0.14597"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_left_wheel_link">
+    <inertial>
+      <origin
+        xyz="-4.0765E-05 0.0023704 2.6227E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.13287" />
+      <inertia
+        ixx="2.843E-05"
+        ixy="6.5532E-08"
+        ixz="1.7513E-08"
+        iyy="3.4562E-05"
+        iyz="1.4597E-08"
+        izz="2.8355E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/front_left_wheel_link.STL" /> -->
+          <mesh filename="file:///home/guen/neuronbot2_ros2_ws/src/neuronbot2/neuronbot2_description/meshes/mecanum.dae" scale="0.325 0.325 0.325"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/front_left_wheel_link.STL" /> -->
+          <mesh filename="file:///home/guen/neuronbot2_ros2_ws/src/neuronbot2/neuronbot2_description/meshes/mecanum.dae" scale="0.325 0.325 0.325"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_wheel_link_joint"
+    type="continuous">
+    <origin
+      xyz="0.073339 0.1015 0.021788"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <!-- <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" /> -->
+  </joint>
+  <link
+    name="front_right_wheel_link">
+    <inertial>
+      <origin
+        xyz="4.0765E-05 -0.0023704 2.6227E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.13287" />
+      <inertia
+        ixx="2.843E-05"
+        ixy="6.5532E-08"
+        ixz="-1.7513E-08"
+        iyy="3.4562E-05"
+        iyz="-1.4597E-08"
+        izz="2.8355E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/front_right_wheel_link.STL" /> -->
+          <mesh filename="file:///home/guen/neuronbot2_ros2_ws/src/neuronbot2/neuronbot2_description/meshes/mecanum.dae" scale="0.325 0.325 0.325"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/front_right_wheel_link.STL" /> -->
+          <mesh filename="file:///home/guen/neuronbot2_ros2_ws/src/neuronbot2/neuronbot2_description/meshes/mecanum.dae" scale="0.325 0.325 0.325"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_wheel_link_joint"
+    type="continuous">
+    <origin
+      xyz="0.073281 -0.1015 0.021788"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <!-- <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" /> -->
+  </joint>
+  <link
+    name="rear_left_wheel_link">
+    <inertial>
+      <origin
+        xyz="1.6854E-05 0.0023704 2.6227E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.13287" />
+      <inertia
+        ixx="2.843E-05"
+        ixy="6.5532E-08"
+        ixz="1.7513E-08"
+        iyy="3.4562E-05"
+        iyz="1.4597E-08"
+        izz="2.8355E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/rear_left_wheel_link.STL" /> -->
+          <mesh filename="file:///home/guen/neuronbot2_ros2_ws/src/neuronbot2/neuronbot2_description/meshes/mecanum.dae" scale="0.325 0.325 0.325"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/rear_left_wheel_link.STL" /> -->
+          <mesh filename="file:///home/guen/neuronbot2_ros2_ws/src/neuronbot2/neuronbot2_description/meshes/mecanum.dae" scale="0.325 0.325 0.325"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_wheel_link_joint"
+    type="continuous">
+    <origin
+      xyz="-0.073339 0.1015 0.021788"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_left_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <!-- <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" /> -->
+  </joint>
+  <link
+    name="rear_right_wheel_link">
+    <inertial>
+      <origin
+        xyz="4.0765E-05 -0.0023704 2.6227E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.13287" />
+      <inertia
+        ixx="2.843E-05"
+        ixy="6.5532E-08"
+        ixz="-1.7513E-08"
+        iyy="3.4562E-05"
+        iyz="-1.4597E-08"
+        izz="2.8355E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/rear_right_wheel_link.STL" /> -->
+          <mesh filename="file:///home/guen/neuronbot2_ros2_ws/src/neuronbot2/neuronbot2_description/meshes/mecanum.dae" scale="0.325 0.325 0.325"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="file:///home/guen/guenbot2_ws/src/guenbot2/guenbot2_description/meshes/rear_right_wheel_link.STL" /> -->
+          <mesh filename="file:///home/guen/neuronbot2_ros2_ws/src/neuronbot2/neuronbot2_description/meshes/mecanum.dae" scale="0.325 0.325 0.325"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_wheel_link_joint"
+    type="continuous">
+    <origin
+      xyz="-0.073339 -0.1015 0.021788"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_right_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <!-- <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" /> -->
+  </joint>
+  <!-- #############################  GAZEBO-IMU ###############################-->
+  <gazebo reference="imu_link">
+    <sensor name="imu_sensor" type="imu">
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <ros>
+          <namespace>/demo</namespace>
+          <remapping>~/out:=imu/data</remapping>
+        </ros>
+        <initial_orientation_as_reference>false</initial_orientation_as_reference>
+      </plugin>
+      <always_on>true</always_on>
+      <update_rate>10</update_rate>
+      <visualize>true</visualize>
+      <imu>
+        <angular_velocity>
+          <x>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </z>
+        </linear_acceleration>
+      </imu>
+    </sensor>
+  </gazebo>
+  <!-- #############################  GAZEBO-WHELL ###############################-->
+  <gazebo>
+      <plugin name="gazebo_ros_mecanum_diff_drive" filename="libgazebo_mecanum_drive.so">
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+        <odometryFrame>odom</odometryFrame>
+        <robotBaseFrame>base_footprint</robotBaseFrame>
+        <LeftFront>front_left_wheel_link_joint</LeftFront>
+        <RightFront>front_right_wheel_link_joint</RightFront>
+        <LeftRear>rear_left_wheel_link_joint</LeftRear>
+        <RightRear>rear_right_wheel_link_joint</RightRear>
+        <odometryRate>10</odometryRate>      
+        <publishWheelTF>true</publishWheelTF>
+        <publishWheelJointState>true</publishWheelJointState>
+        <WheelTorque>1</WheelTorque>
+        <WheelSeparationW>0.17</WheelSeparationW>
+        <WheelSeparationL>0.195</WheelSeparationL>
+        <wheelAccel>5</wheelAccel>
+        <wheelDiameter>0.09</wheelDiameter>
+        <publishOdom>false</publishOdom>
+        <isRollerModel>true</isRollerModel>
+      </plugin>
+  </gazebo>
+  <!-- #############################  GAZEBO-LIDAR ###############################-->
+  <gazebo reference="lidar_link">
+    <sensor name="lidar" type="ray">
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1.000000</resolution>
+            <min_angle>0.000000</min_angle>
+            <max_angle>6.280000</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.120000</min>
+          <max>10</max>
+          <resolution>0.015000</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin filename="libgazebo_ros_ray_sensor.so" name="scan">
+        <ros>
+          <remapping>~/out:=scan</remapping>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>laser</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <!-- #############################  GAZEBO-CAMERA ###############################-->
+  <gazebo reference="camera_link">
+        <material>Gazebo/Red</material>
+        <sensor name="camera" type="camera">
+            <pose> 0 0 0 0 0 0 </pose>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <camera>
+                <horizontal_fov>1.089</horizontal_fov>
+                <image>
+                    <format>R8G8B8</format>
+                    <width>640</width>
+                    <height>480</height>
+                </image>
+                <clip>
+                    <near>0.05</near>
+                    <far>8.0</far>
+                </clip>
+            </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <frame_name>camera_link_optical</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+</robot>
