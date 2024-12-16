@@ -18,26 +18,4 @@ private:
     std::string qr_data_;
 };
 
-class PushToStack : public BT::SyncActionNode {
-public:
-    PushToStack(const std::string& name, const BT::NodeConfiguration& config);
-    static BT::PortsList providedPorts();
-    BT::NodeStatus tick() override;
-
-private:
-    static std::stack<std::string> stack_t; // Static stack shared by all instances
-    rclcpp::Node::SharedPtr node_;
-};
-
-class ProcessStack : public BT::SyncActionNode {
-public:
-    ProcessStack(const std::string& name, const BT::NodeConfiguration& config);
-    static BT::PortsList providedPorts();
-    BT::NodeStatus tick() override;
-
-private:
-    static std::stack<std::string> stack_t; // Static stack shared by all instances
-    rclcpp::Node::SharedPtr node_;
-};
-
 #endif // QR_CODE_NODE_HPP

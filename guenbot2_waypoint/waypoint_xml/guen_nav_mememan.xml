@@ -3,9 +3,9 @@
         <Repeat num_cycles="3">
             <Sequence>
                 <!-- The goal value="position-x;position-y;orientaion-z;orientation-w" -->
-                <SetBlackboard output_key="Goal_a" value="2.434;-9.254;0.0;1.0" />
-                <SetBlackboard output_key="Goal_b" value="7.109;9.526;0.0;1.0" />
-                <SetBlackboard output_key="Goal_c" value="-10.015;3.409;0.0;1.0" />
+                <SetBlackboard output_key="Goal_a" value="0.727;-0.551;0.0;0.5" />
+                <SetBlackboard output_key="Goal_b" value="1.368;-0.95;0.0;1.0" />
+                <SetBlackboard output_key="Goal_c" value="2.073;-1.020;0.0;1.0" />
                 <Sequence>
                     <SubTree ID="MoveRobot" target="Goal_a" />
                     <SubTree ID="MoveRobot" target="Goal_b" />

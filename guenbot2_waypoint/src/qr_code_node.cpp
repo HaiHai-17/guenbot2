@@ -49,36 +49,3 @@ BT::NodeStatus CheckQRCode::tick() {
         return BT::NodeStatus::FAILURE;
     }
 }
-
-PushToStack::PushToStack(const std::string& name, const BT::NodeConfiguration& config)
-    : BT::SyncActionNode(name, config) {}
-
-BT::PortsList PushToStack::providedPorts() {
-    return {BT::InputPort<std::string>("value")};
-}
-
-BT::NodeStatus PushToStack::tick() {
-    std::string value;
-    getInput("value", value);
-    stack_t.push(value);  // Push goal into stack
-    RCLCPP_INFO(node_->get_logger(), "Pushed goal: %s", value.c_str());
-    return BT::NodeStatus::SUCCESS;
-}
-
-ProcessStack::ProcessStack(const std::string& name, const BT::NodeConfiguration& config)
-    : BT::SyncActionNode(name, config) {}
-
-BT::PortsList ProcessStack::providedPorts() {
-    return {};
-}
-
-BT::NodeStatus ProcessStack::tick() {
-    if (!stack_t.empty()) {
-        std::string goal = stack_t.top();
-        stack_t.pop();
-        // Move robot to goal
-        RCLCPP_INFO(node_->get_logger(), "Moving to goal: %s", goal.c_str());
-        return BT::NodeStatus::SUCCESS;
-    }
-    return BT::NodeStatus::FAILURE;
-}

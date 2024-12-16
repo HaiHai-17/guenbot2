@@ -13,11 +13,11 @@ public:
     BT::NodeStatus tick() override {
         std::string value;
         getInput("value", value);
-        stack_.push(value); // Push goal into stack
+        stack_t.push(value); // Push goal into stack
         return BT::NodeStatus::SUCCESS;
     }
 
-    std::stack<std::string> stack_;
+    static std::stack<std::string> stack_t; // Declare static stack
 };
 
 class ProcessStack : public BT::SyncActionNode {
@@ -30,9 +30,9 @@ public:
     }
 
     BT::NodeStatus tick() override {
-        if (!stack_.empty()) {
-            std::string goal = stack_.top();
-            stack_.pop();
+        if (!stack_t.empty()) {
+            std::string goal = stack_t.top();
+            stack_t.pop();
             // Move robot to goal
             RCLCPP_INFO(node_->get_logger(), "Moving to goal: %s", goal.c_str());
             return BT::NodeStatus::SUCCESS;
@@ -40,6 +40,6 @@ public:
         return BT::NodeStatus::FAILURE;
     }
 
-    std::stack<std::string> stack_;
+    static std::stack<std::string> stack_t; // Declare static stack
     rclcpp::Node::SharedPtr node_;
 };

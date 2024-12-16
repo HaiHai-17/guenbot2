@@ -1,22 +1,10 @@
 #include "nav2_client.hpp"
-#include "interrupt_event.hpp"
-#include "snapshot_client.hpp"
 #include "teleop_event.hpp"
-#include "qr_code_node.hpp"
-
-
-#ifdef SUPPORT_OPENVINO
-    #include "openvino_event.hpp"
-#endif
-
-#ifdef SUPPORT_AUTODOCK
-#include "autodock_client.hpp"
-#endif
 
 #include <behaviortree_cpp_v3/bt_factory.h>
 #include <behaviortree_cpp_v3/loggers/bt_cout_logger.h>
 
-#define DEFAULT_BT_XML "/home/guen/guenbot2_ws/src/guenbot2_waypoint/waypoint_xml/guen_qrcode.xml"
+#define DEFAULT_BT_XML "/home/guen/guenbot2_ws/src/guenbot2_waypoint/waypoint_xml/guen_nav_mememan.xml"
 
 using namespace BT;
 
@@ -33,17 +21,8 @@ int main(int argc, char **argv)
   
     // We use the BehaviorTreeFactory to register our custom nodes
     BehaviorTreeFactory factory;
-    factory.registerNodeType<CheckQRCode>("CheckQRCode");
     factory.registerNodeType<Nav2Client>("Nav2Client");
-    factory.registerNodeType<InterruptEvent>("InterruptEvent");
-    factory.registerNodeType<SnapshotClient>("SnapshotClient");
     factory.registerNodeType<SendCommandVel>("SendCommandVel");
-#ifdef SUPPORT_OPENVINO
-    factory.registerNodeType<OpenVINOEvent>("OpenVINOEvent");
-#endif
-#ifdef SUPPORT_AUTODOCK
-    factory.registerNodeType<AutodockClient>("AutodockClient");
-#endif    
   
     // Trees are created at deployment-time (i.e. at run-time, but only once at
     // the beginning). The currently supported format is XML. IMPORTANT: when the
