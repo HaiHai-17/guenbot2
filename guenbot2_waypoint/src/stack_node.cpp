@@ -1,6 +1,0 @@
-
-#include "stack_node.hpp"
-// ...existing code...
-std::stack<std::string> PushToStack::stack_t;  // Define static stack
-std::stack<std::string> ProcessStack::stack_t; // Define static stack
-// ...existing code...
