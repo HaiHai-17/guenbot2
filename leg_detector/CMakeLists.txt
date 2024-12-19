@@ -2,11 +2,6 @@ cmake_minimum_required(VERSION 3.5)
 
 project(leg_detector)
 
-# Default to C99
-if(NOT CMAKE_C_STANDARD)
-  set(CMAKE_C_STANDARD 99)
-endif()
-
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
@@ -16,7 +11,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-#set (OpenCV_DIR /usr/local/include)
+set (OpenCV_DIR /usr/local/include)
 include_directories(include ${OpenCV_INCLUDE_DIR})
 
 

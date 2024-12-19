@@ -1,408 +1,463 @@
-       tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 11
-               sample_count: 42
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 5.7958664546899854e+00
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:8, quality:1.8169778823852539e+01,
-                      le:9.9190231412649155e-03 }
-            -
-               depth: 12
-               sample_count: 23
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 8.2798092209856833e-01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:3, quality:1.3838842391967773e+01,
-                      le:6.1299622058868408e-02 }
-            -
-               depth: 13
-               sample_count: 11
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 13
-               sample_count: 12
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 8.2798092209856922e-01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:2, quality:7.3440380096435547e+00,
-                      le:2.0568825304508209e-02 }
-            -
-               depth: 14
-               sample_count: 3
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 14
-               sample_count: 9
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 12
-               sample_count: 19
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 7.2400635930047663e-01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:2, quality:4.9193811416625977e+00,
-                      le:2.8975609689950943e-02 }
-            -
-               depth: 13
-               sample_count: 15
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 13
-               sample_count: 4
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 7.2400635930047674e-01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:13, quality:1.5519872903823853e+00,
-                      le:1.7097436189651489e+00 }
-            -
-               depth: 14
-               sample_count: 1
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 14
-               sample_count: 3
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 8
-               sample_count: 9
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 7
-               sample_count: 6
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 2.7599364069952292e-01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:10, quality:3.8960254192352295e+00,
-                      le:1.9905331134796143e+00 }
-            -
-               depth: 8
-               sample_count: 1
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 8
-               sample_count: 5
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 6
-               sample_count: 25
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 4
-               sample_count: 2256
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 2.7571764705882356e+02
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:8, quality:7.7287011718750000e+02,
-                      le:7.9854400828480721e-03 }
-            -
-               depth: 5
-               sample_count: 1045
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 9.9357710651828313e+01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:7, quality:4.4365408325195312e+02,
-                      le:2.4561300873756409e-02 }
-            -
-               depth: 6
-               sample_count: 44
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 1.4480127186009533e+00
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:14, quality:1.2576125144958496e+01,
-                      le:1.8521639704704285e-01 }
-            -
-               depth: 7
-               sample_count: 41
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 7
-               sample_count: 3
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 2.7599364069952292e-01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:6, quality:1.7240064144134521e+00,
-                      le:3.0689612030982971e-02 }
-            -
-               depth: 8
-               sample_count: 2
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 8
-               sample_count: 1
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 6
-               sample_count: 1001
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 8.7765977742448342e+01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:11, quality:4.4679635620117188e+02,
-                      le:2.4444596767425537e+00 }
-            -
-               depth: 7
-               sample_count: 683
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 3.7811128775834675e+01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:15, quality:3.6645431518554688e+02,
-                      le:5.0000000000000000e-01 }
-            -
-               depth: 8
-               sample_count: 160
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 1.6835612082670906e+01
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:16, quality:6.8173500061035156e+01,
-                      le:5.0000000000000000e-01 }
-            -
-               depth: 9
-               sample_count: 52
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 8.6880763116057231e+00
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:4, quality:1.6097946166992188e+01,
-                      le:2.0408160053193569e-03 }
-            -
-               depth: 10
-               sample_count: 43
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 2.1720190779014317e+00
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:14, quality:1.0430921554565430e+01,
-                      le:2.5542104244232178e-01 }
-            -
-               depth: 11
-               sample_count: 26
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 11
-               sample_count: 17
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 2.1720190779014308e+00
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:2, quality:4.3482451438903809e+00,
-                      le:2.3715225979685783e-02 }
-            -
-               depth: 12
-               sample_count: 9
-               value: -1.
-               norm_class_idx: 0
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 0.
-               tree_risk: 0.
-               tree_error: 0.
-            -
-               depth: 12
-               sample_count: 8
-               value: 1.
-               norm_class_idx: 1
-               Tn: 0
-               complexity: 0
-               alpha: 0.
-               node_risk: 1.3799682034976151e+00
-               tree_risk: 0.
-               tree_error: 0.
-               splits:
-                  - { var:11, quality:3.5519871711730957e+00,
-                      le:2.0054349899291992e+00 }
-            -
-               depth: 13
-               sample_coun
+#include <cstdlib>
+#include "carmenconfiguration.h"
+#include <iostream>
+#include <sstream>
+#include <assert.h>
+#include <sys/types.h>
+#include <sensor_odometry/odometrysensor.h>
+#include <sensor_range/rangesensor.h>
+
+
+#define LINEBUFFER_SIZE 10000
+
+namespace GMapping {
+
+using namespace std;
+
+istream& CarmenConfiguration::load(istream& is){
+	clear();
+	char buf[LINEBUFFER_SIZE];
+	bool laseron=false;
+	bool rlaseron=false;
+	bool rlaser1=false;
+	bool rlaser2=false;
+
+	string beams;
+	string rbeams;
+
+	while (is){
+		is.getline(buf, LINEBUFFER_SIZE);
+		istringstream lis(buf);
+		
+		string qualifier;
+		string name;
+		
+		if (lis) 
+			lis >> qualifier; 
+		else 
+			continue;
+		//this is a workaround for carmen log files
+		//the number lf laser beams should be specofoed in the config
+		//part of the log
+		if (qualifier=="FLASER"){
+			laseron=true;
+			lis >> beams;
+		}
+		if (qualifier=="RLASER"){
+			rlaseron=true;
+			lis >> rbeams;
+		}
+		if (qualifier=="ROBOTLASER1"){
+			string laser_type, start_angle, field_of_view, angular_resolution, maximum_range, accuracy, remission_mode;
+			lis >> laser_type>> start_angle>> field_of_view>> angular_resolution>> maximum_range>> accuracy>> remission_mode>> beams;
+			rlaser1=true;
+		}
+		if (qualifier=="ROBOTLASER2"){
+			string laser_type, start_angle, field_of_view, angular_resolution, maximum_range, accuracy, remission_mode;
+			lis >> laser_type>> start_angle>> field_of_view>> angular_resolution>> maximum_range>> accuracy>> remission_mode>> rbeams;
+			rlaser2=true;
+		}
+		if (qualifier!="PARAM") 
+			continue;
+		if (lis) 
+			lis >> name; 
+		else continue;
+		
+
+		vector<string> v;
+		while (lis){
+			string cparm;
+			lis >> cparm;
+			if (lis)
+				v.push_back(cparm);
+		}
+		insert(make_pair(name, v));
+	}
+	if (laseron || rlaser1){
+		vector<string> v;
+		v.push_back(beams);
+		insert(make_pair("laser_beams", v));
+		cerr << "FRONT LASER BEAMS FROM LOG: " << beams << endl;
+		v.clear();
+		v.push_back("on");
+		insert(make_pair("robot_use_laser", v));
+	}
+	if (rlaseron || rlaser2){
+		vector<string> v;
+		v.push_back(rbeams);
+		insert(make_pair("rear_laser_beams", v));
+		cerr << "REAR LASER BEAMS FROM LOG: " << beams << endl;
+		v.clear();
+		v.push_back("on");
+		insert(make_pair("robot_use_rear_laser", v));
+	}
+	return is;
+}
+
+SensorMap CarmenConfiguration::computeSensorMap() const{
+	//this boring stuff is for retrieving the parameters from the loaded tokens
+	
+	SensorMap smap;
+	//odometry
+	OdometrySensor* odometry=new OdometrySensor("ODOM");
+	OdometrySensor* truepos=new OdometrySensor("TRUEPOS", true);
+	
+	smap.insert(make_pair(odometry->getName(), odometry));
+	smap.insert(make_pair(truepos->getName(), truepos));
+	//sonars
+	const_iterator key=find("robot_use_sonar");
+	if (key!=end() && key->second.front()=="on"){
+		RangeSensor* sonar=new RangeSensor("SONAR");
+
+		//the center of the sonar is the center of the base
+		sonar->m_pose.x=sonar->m_pose.y=sonar->m_pose.theta=0;
+
+		double maxrange=10.;
+		key=find("robot_max_sonar");
+		if (key!=end()){
+			maxrange=atof(key->second.front().c_str());
+			cerr << "max sonar:" << maxrange << endl;
+		}
+
+		unsigned int sonar_num=0;
+		key=find("robot_num_sonars");
+		if (key!=end()){
+			sonar_num=atoi(key->second.front().c_str());
+			cerr << "robot_num_sonars" << sonar_num << endl;
+		}
+
+		key=find("robot_sonar_offsets");
+		if (key!=end()){
+			const vector<string> & soff=key->second;
+
+			if( (soff.size()/3<sonar_num)){
+				cerr << __PRETTY_FUNCTION__ << ": Error " << soff.size()
+				<< " parameters for defining the sonar offsets"
+				<< " while the specified number of sonars requires "
+				<< sonar_num*3 << " parameters at least" << endl;
+			} else {
+				cerr << __PRETTY_FUNCTION__ << ": Ok " << soff.size() << " parameters for defining the sonar offsets of " << sonar_num << " devices" << endl;
+			}
+
+
+			RangeSensor::Beam beam;
+
+			for (unsigned int i=0; i<sonar_num*3; i+=3){
+				beam.span=M_PI/180.*7.5;
+				beam.pose.x=atof(soff[i].c_str());
+				beam.pose.y=atof(soff[i+1].c_str());
+				beam.pose.theta=atof(soff[i+2].c_str());
+				beam.maxRange=maxrange;
+				sonar->m_beams.push_back(beam);
+				cerr << "beam_x" << beam.pose.x;
+				cerr << " beam_y" << beam.pose.y;
+				cerr << " beam_theta" << beam.pose.theta << endl;;
+			}
+		}
+		sonar->updateBeamsLookup();
+		smap.insert(make_pair(sonar->getName(), sonar));
+	}
+	
+	//laser
+	key=find("robot_use_laser");
+
+	if (key!=end() && key->second.front()=="on"){
+		RangeSensor* laser=new RangeSensor("FLASER");
+		laser->newFormat=false;
+		//by default the center of the robot is the center of the laser
+		laser->m_pose.x=laser->m_pose.y=laser->m_pose.theta=0;
+		key=find("robot_frontlaser_offset");
+		if (key!=end()){
+			laser->m_pose.x=atof(key->second.front().c_str());
+			cerr << "FRONT OFFSET= " << laser->m_pose.x << endl;
+		}
+		
+		
+		
+		RangeSensor::Beam beam;
+			
+		//double angle=-.5*M_PI;
+		unsigned int beam_no=180;
+	
+		key=find("laser_beams");
+		if (key!=end()){
+			beam_no=atoi(key->second.front().c_str());
+			cerr << "FRONT BEAMS="<< beam_no << endl;
+		}
+		
+		double maxrange=50;
+		double resolution=1.;
+				
+		
+		if (beam_no==180 || beam_no==181)
+		  resolution =1.;
+		else if (beam_no==360 || beam_no==361)
+		  resolution =.5;
+		else if (beam_no==540 || beam_no==541)
+		  resolution =.5;
+		else if (beam_no==769) {
+		  resolution =360./1024.;
+		  maxrange = 4.1;
+		}
+		else if (beam_no==682) {
+		  resolution =360./1024.;
+		  maxrange = 4.1;
+		}
+		else if (beam_no==683) {
+		  resolution =360./1024.;
+		  maxrange = 5.5;
+		}
+		else {
+			key=find("laser_front_laser_resolution");
+			if (key!=end()){
+				resolution=atof(key->second.front().c_str());
+				cerr << "FRONT RES " << resolution << endl;
+			}
+		}
+		
+		laser->m_beams.resize(beam_no);
+		double center_beam=(double)beam_no/2.;
+		uint low_index=(uint)floor(center_beam);
+		uint up_index=(uint)ceil(center_beam);
+		double step=resolution*M_PI/180.;
+		double angle=beam_no%2?0:step;
+		unsigned int i=beam_no%2?0:1;
+		for (; i<low_index+1; i++, angle+=step){
+			beam.span=0;
+			beam.pose.x=0;
+			beam.pose.y=0;
+			beam.s = 1;
+			beam.c = 1;
+			beam.pose.theta=-angle;
+			beam.maxRange=maxrange;
+			laser->m_beams[low_index-i]=beam;
+			beam.pose.theta=angle;
+			laser->m_beams[up_index+i-1]=beam;
+		}
+		laser->updateBeamsLookup();
+		smap.insert(make_pair(laser->getName(), laser));
+		cerr << "front beams " << beam_no << endl;
+		cerr << "maxrange " << maxrange << endl;
+	}
+
+
+	key=find("robot_use_laser");
+	if (key!=end() && key->second.front()=="on"){
+		RangeSensor* laser=new RangeSensor("ROBOTLASER1");
+		laser->newFormat=true;
+		cerr << "ROBOTLASER1 inserted" << endl; 
+		//by default the center of the robot is the center of the laser
+		laser->m_pose.x=laser->m_pose.y=laser->m_pose.theta=0;
+		key=find("robot_frontlaser_offset");
+		if (key!=end()){
+			laser->m_pose.x=atof(key->second.front().c_str());
+			cerr << "FRONT OFFSET=" << laser->m_pose.x << endl;
+		}
+		
+		RangeSensor::Beam beam;
+			
+		//double angle=-.5*M_PI;
+		unsigned int beam_no=180;
+	
+		key=find("laser_beams");
+		if (key!=end()){
+			beam_no=atoi(key->second.front().c_str());
+			cerr << "FRONT BEAMS="<< beam_no << endl;
+		}
+		
+		double maxrange=50;
+		double resolution=1.;
+				
+		
+		if (beam_no==180 || beam_no==181)
+		  resolution =1.;
+		else if (beam_no==360 || beam_no==361)
+		  resolution =.5;
+		else if (beam_no==540 || beam_no==541)
+		  resolution =.5;
+		else if (beam_no==769)
+		  resolution =360./1024.;
+		else if (beam_no==683) {
+		  resolution =360./1024.;
+		   maxrange=5.50;
+		}
+		else {
+			key=find("laser_front_laser_resolution");
+			if (key!=end()){
+				resolution=atof(key->second.front().c_str());
+				cerr << "FRONT RES" << resolution << endl;
+			}
+		}
+		
+		laser->m_beams.resize(beam_no);
+		double center_beam=(double)beam_no/2.;
+		uint low_index=(uint)floor(center_beam);
+		uint up_index=(uint)ceil(center_beam);
+		double step=resolution*M_PI/180.;
+		double angle=beam_no%2?0:step;
+		unsigned int i=beam_no%2?0:1;
+		for (; i<low_index+1; i++, angle+=step){
+			beam.span=0;
+			beam.pose.x=0;
+			beam.pose.y=0;
+			beam.s=0;
+			beam.c=1;
+			beam.pose.theta=-angle;
+			beam.maxRange=maxrange;
+			laser->m_beams[low_index-i]=beam;
+			beam.pose.theta=angle;
+			laser->m_beams[up_index+i-1]=beam;
+		}
+		laser->updateBeamsLookup();
+		smap.insert(make_pair(laser->getName(), laser));
+		cerr << "front beams" << beam_no << endl;
+	}
+
+	
+	//vertical laser
+	key=find("robot_use_rear_laser");
+
+	if (key!=end() && key->second.front()=="on"){
+		RangeSensor* laser=new RangeSensor("RLASER");
+		
+		//by default the center of the robot is the center of the laser
+		laser->m_pose.x=laser->m_pose.y=laser->m_pose.theta=0;
+		laser->m_pose.theta=M_PI;
+		key=find("robot_rearlaser_offset");
+		if (key!=end()){
+			laser->m_pose.x=atof(key->second.front().c_str());
+			cerr << "REAR OFFSET = " << laser->m_pose.x << endl;
+		}
+		
+		
+		
+		RangeSensor::Beam beam;
+			
+		//double angle=-.5*M_PI;
+		unsigned int beam_no=180;
+	
+		key=find("rear_laser_beams");
+		if (key!=end()){
+			beam_no=atoi(key->second.front().c_str());
+			cerr << "REAR BEAMS="<< beam_no << endl;
+		}
+		
+		double maxrange=89;
+		double resolution=1.;
+				
+		
+		if (beam_no==180 || beam_no==181)
+			resolution =1.;
+		else if (beam_no==360 || beam_no==361)
+			resolution =.5;
+		else if (beam_no==540 || beam_no==541)
+		  resolution =.5;
+		else if (beam_no==769)
+			resolution =360./1024.;
+		else {
+			key=find("laser_rear_laser_resolution");
+			if (key!=end()){
+				resolution=atof(key->second.front().c_str());
+				cerr << "REAR RES" << resolution << endl;
+			}
+		}
+		
+		laser->m_beams.resize(beam_no);
+		double center_beam=(double)beam_no/2.;
+		uint low_index=(uint)floor(center_beam);
+		uint up_index=(uint)ceil(center_beam);
+		double step=resolution*M_PI/180.;
+		double angle=beam_no%2?0:step;
+		unsigned int i=beam_no%2?0:1;
+		for (; i<low_index+1; i++, angle+=step){
+			beam.span=0;
+			beam.pose.x=0;
+			beam.pose.y=0;
+			beam.s=0;
+			beam.c=1;
+			beam.pose.theta=-angle;
+			beam.maxRange=maxrange;
+			laser->m_beams[low_index-i]=beam;
+			beam.pose.theta=angle;
+			laser->m_beams[up_index+i-1]=beam;
+		}
+		laser->updateBeamsLookup();
+		smap.insert(make_pair(laser->getName(), laser));
+		cerr<< "rear beams" << beam_no << endl;
+	}
+
+	key=find("robot_use_rear_laser");
+	if (key!=end() && key->second.front()=="on"){
+		RangeSensor* laser=new RangeSensor("ROBOTLASER2");
+		laser->newFormat=true;
+		cerr << "ROBOTLASER2 inserted" << endl; 
+		//by default the center of the robot is the center of the laser
+		laser->m_pose.x=laser->m_pose.y=0;
+		laser->m_pose.theta=M_PI;
+		key=find("robot_rearlaser_offset");
+		if (key!=end()){
+			// laser->m_pose.x==atof(key->second.front().c_str());
+			cerr << "REAR OFFSET not used" << laser->m_pose.x << endl;
+		}
+		
+		RangeSensor::Beam beam;
+			
+		//double angle=-.5*M_PI;
+		unsigned int beam_no=180;
+	
+		key=find("rear_laser_beams");
+		if (key!=end()){
+			beam_no=atoi(key->second.front().c_str());
+			cerr << "REAR BEAMS="<< beam_no << endl;
+		}
+		
+		double maxrange=50;
+		double resolution=1.;
+				
+		
+		if (beam_no==180 || beam_no==181)
+			resolution =1.;
+		else if (beam_no==360 || beam_no==361)
+			resolution =.5;
+		else if (beam_no==540 || beam_no==541)
+		  resolution =.5;
+		else if (beam_no==769)
+			resolution =360./1024.;
+		else {
+			key=find("laser_rear_laser_resolution");
+			if (key!=end()){
+				resolution=atof(key->second.front().c_str());
+				cerr << "REAR RES" << resolution << endl;
+			}
+		}
+		
+		laser->m_beams.resize(beam_no);
+		double center_beam=(double)beam_no/2.;
+		uint low_index=(uint)floor(center_beam);
+		uint up_index=(uint)ceil(center_beam);
+		double step=resolution*M_PI/180.;
+		double angle=beam_no%2?0:step;
+		unsigned int i=beam_no%2?0:1;
+		for (; i<low_index+1; i++, angle+=step){
+			beam.span=0;
+			beam.s=0;
+			beam.c=1;
+			beam.pose.x=0;
+			beam.pose.y=0;
+			beam.pose.theta=-angle;
+			beam.maxRange=maxrange;
+			laser->m_beams[low_index-i]=beam;
+			beam.pose.theta=angle;
+			laser->m_beams[up_index+i-1]=beam;
+		}
+		laser->updateBeamsLookup();
+		smap.insert(make_pair(laser->getName(), laser));
+		cerr << "rear beams" << beam_no << endl;
+	}
+
+
+	return smap;
+}
+
+};
+

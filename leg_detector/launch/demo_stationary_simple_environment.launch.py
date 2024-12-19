@@ -7,7 +7,7 @@ import launch
 import os
 
 leg_detector_path = get_package_share_directory('leg_detector')
-rosbag_path = leg_detector_path + "/rosbag/demos/demo_stationary_simple_environment.bag"
+rosbag_path = leg_detector_path + "/rosbag/demos/demo_stationary_simple_environment"
 rviz2_config_path = leg_detector_path + "/rosbag/demos/rviz/demo_stationary_simple_environment.rviz"
 forest_file_path = leg_detector_path + "/config/trained_leg_detector_res=0.33.yaml"
 
@@ -17,7 +17,7 @@ def generate_launch_description():
 
         # Launching Rosbag node
         launch.actions.ExecuteProcess(
-            cmd=['ros2', 'bag', 'play', '-s', 'rosbag_v2', rosbag_path],
+            cmd=['ros2', 'bag', 'play', '-s', 'sqlite3', rosbag_path],
             output='screen'
         ),
 
@@ -48,8 +48,9 @@ def generate_launch_description():
         parameters=[
             {"scan_topic" : "/scan"},
             {"fixed_frame" : "laser"},
-            {"scan_frequency" : 10}
-        ]    
+            {"scan_frequency" : 10.0}
+        ],
+        output='screen'   
     )
 
     # Launching inflated_human_scan node
